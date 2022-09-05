@@ -1,19 +1,39 @@
-body{
-	background-color: lightyellow;
+.active a:after{
+	content: "";
+	position: relative;
+	border: 1px solid black;
+	width: 40px;
+	height: 1px;
+	display: block;
 }
 
 #cover{
+	height: 98vh;
+	background: rgb(68, 47, 23);
+	isolation: isolate;
+}
+
+#cover::after{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	inset: 0;
+	opacity: 0.5;
+	background-image: url("../images/OIP5.jpg");
+	background-size: cover;
 	height: 85vh;
+	transform: translateY(15%);
 }
 
 #about-us-images{
 	height: 400px;
+	overflow: hidden;
 }
 
 #menu-image{
-	height: 400px;
+	/*height: 400px;*/
 }
 
 #spice-images{
-	height: 400px;
+	/*height: 50px;*/
 }
