@@ -1,5 +1,5 @@
 const navItems=document.querySelectorAll(".nav-item");
-const navToggler=document.querySelector("#navbar-toggler-btn");
+const navContent=document.querySelector("#nav-content");
 
 let activeItem=navItems[0];
 
@@ -8,6 +8,6 @@ navItems.forEach(n=>{
 			activeItem.classList.remove("active");
 			n.classList.add("active");
 			activeItem=n;
-			navToggler.click();
+			navContent.classList.remove("show");
 		})
 });
