@@ -1,3 +1,7 @@
+img{
+	width: 100%;
+}
+
 .active a:after{
 	content: "";
 	position: relative;
@@ -19,15 +23,20 @@
 	z-index: -1;
 	inset: 0;
 	opacity: 0.5;
-	background-image: url("../images/OIP5.jpg");
+	background-image: url("../images/R (2).jpg");
 	background-size: cover;
 	height: 85vh;
 	transform: translateY(15%);
 }
 
 #about-us-images{
-	height: 400px;
-	overflow: hidden;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 1em;
+}
+
+#about-us-images img{
+	width: 100%;
 }
 
 #menu-image{
