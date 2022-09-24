@@ -11,3 +11,20 @@ navItems.forEach(n=>{
 			navContent.classList.remove("show");
 		})
 });
+
+const hiddenImages=document.querySelectorAll(".hidden");
+
+const options={rootMargin:"-100px 0px 0px 0px"};
+
+const imageObserver=new IntersectionObserver((entries)=>{
+	entries.forEach(entry=>{
+		if(entry.isIntersecting){
+			entry.target.classList.remove("hidden");
+		}
+	});
+},options);
+
+
+hiddenImages.forEach(el=>{
+	imageObserver.observe(el)
+});

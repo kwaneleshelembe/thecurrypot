@@ -5,6 +5,7 @@ body{
 img{
 	width: 100%;
 	border-radius: 1em;
+	transition: 1s;
 }
 
 .active a:after{
@@ -65,4 +66,9 @@ img{
 
 #spice-images{
 	/*height: 50px;*/
+}
+
+.hidden{
+	transform: translateY(-50px);
+	opacity: 0;
 }
