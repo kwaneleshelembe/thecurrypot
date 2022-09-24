@@ -1,3 +1,7 @@
+body{
+	overflow-x: hidden;
+}
+
 img{
 	width: 100%;
 	border-radius: 1em;
@@ -28,6 +32,17 @@ img{
 	background-size: cover;
 	height: 85vh;
 	transform: translateY(15%);
+	transition: 500ms;
+}
+
+@media (max-width: 700px){
+	#cover{
+		background-image: url("../images/R (2).jpg");
+	}
+
+	#cover::after{
+		opacity: 0;
+	}
 }
 
 #about-us-images{
