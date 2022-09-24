@@ -43,6 +43,10 @@ img{
 	/*height: 400px;*/
 }
 
+#menu-image img{
+	max-width: 100%;
+}
+
 #spice-images{
 	/*height: 50px;*/
 }
