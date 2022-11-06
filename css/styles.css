@@ -17,33 +17,31 @@ img{
 	display: block;
 }
 
-#cover{
-	height: 98vh;
-	background: rgb(68, 47, 23);
-	isolation: isolate;
+#cover,#cover-back,#cover-text{
+	height: 100vh;
+	width: 100%;
+	top: 0;
+}
+#cover-text,#cover-back{
+	position: absolute;
 }
 
-#cover::after{
-	content: "";
-	position: absolute;
-	z-index: -1;
-	inset: 0;
-	opacity: 0.5;
+#cover{
 	background-image: url("../images/R (2).jpg");
 	background-size: cover;
-	height: 85vh;
-	transform: translateY(15%);
-	transition: 500ms;
+	opacity: 0.6;
 }
 
-@media (max-width: 700px){
-	#cover{
-		background-image: url("../images/R (2).jpg");
-	}
+#cover-text{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
 
-	#cover::after{
-		opacity: 0;
-	}
+#cover-back{
+	background: rgb(68,47,23);
 }
 
 #about-us-images{
